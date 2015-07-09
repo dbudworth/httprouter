@@ -35,6 +35,8 @@ to the correct URL.
 just give the path segment a name and the router delivers the dynamic value to
 you. Because of the design of the router, path parameters are very cheap.
 
+**RouteGroups:** A way to create groups of routes without incuring any per-request overhead.
+
 **Zero Garbage:** The matching and dispatching process generates zero bytes of
 garbage. In fact, the only heap allocations that are made, is by building the
 slice of the key-value pairs for path parameters. If the request path contains
